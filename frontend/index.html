@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Nexora — Discover what's next</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="index.html">NEXORA<span>.</span></a>
+<nav class="desktop-nav"><a class="active" href="index.html">Home</a><a href="explore.html">Explore</a><a href="#categories">Categories</a><a href="#about">About</a></nav>
+<div class="nav-actions"><a class="login-link" href="login.html">Log in</a><a class="pill dark" href="register.html">Create account</a></div>
+<button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button></div>
+<div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a><a href="explore.html">Explore</a><a href="#categories">Categories</a><a href="#about">About</a><a href="login.html">Log in</a><a href="register.html">Create account</a></div>
+</header>
+<main>
+<section class="hero"><div class="container hero-grid">
+<div class="hero-copy"><div class="eyebrow"><span></span> Local experiences · curated for you</div>
+<h1>Discover<br><em>what's next.</em></h1>
+<p>Find concerts, workshops, food pop-ups, art nights and moments worth showing up for — all around Pune.</p>
+<div class="hero-actions"><a class="pill terracotta" href="explore.html">Explore events <span>↗</span></a><a class="text-link" href="register.html">Host an event <span>→</span></a></div>
+<div class="hero-meta"><span>✦ 40+ curated events</span><span>•</span><span>15 localities</span></div></div>
+<div class="hero-visual"><div class="hero-photo"></div><div class="photo-shade"></div><div class="hero-caption"><span>Featured tonight</span><strong>Jazz at Baller</strong><small>Kalyani Nagar · 8:00 PM</small></div><div class="date-badge"><b>14</b><span>SEP</span></div><div class="floating-note">A little more<br><strong>living</strong> ↓</div></div>
+</div></section>
+<section class="search-section"><div class="container"><form class="search-card" id="searchForm">
+<label><span>⌕</span><input id="searchInput" type="search" placeholder="Search jazz, pottery, comedy..." /></label>
+<label><span>⌖</span><input id="locationInput" type="text" placeholder="City or neighbourhood" value="Pune" list="locationsList" /></label>
+<datalist id="locationsList"></datalist>
+<label><span>◷</span><input id="dateInput" type="date" /></label>
+<button class="search-btn" type="submit">Search</button></form></div></section>
+<section class="section" id="categories"><div class="container">
+<div class="section-head"><div><div class="eyebrow">Browse by feeling</div><h2>Something for<br><em>every mood.</em></h2></div><a class="text-link" href="explore.html">View all →</a></div>
+<div class="category-grid" id="homeCategories"></div></div></section>
+<section class="section events-section"><div class="container"><div class="section-head"><div><div class="eyebrow">This week</div><h2>Worth<br><em>showing up for.</em></h2></div><a class="text-link" href="explore.html">See all events →</a></div>
+<div class="events-grid" id="featuredEvents"></div></div></section>
+<section class="section feature-section" id="about"><div class="container feature-panel"><div class="feature-image"></div><div class="feature-copy"><div class="eyebrow">The Nexora edit</div><h2>Go somewhere<br><em>you haven't been.</em></h2><p>Not everything worth doing is trending. We spotlight intimate gatherings, emerging artists and local hosts that make a city feel alive.</p><a class="pill light" href="explore.html">Explore the edit →</a></div></div></section>
+<section class="section host-section"><div class="container host-panel"><div><div class="eyebrow">For organisers</div><h2>Have something<br><em>worth sharing?</em></h2><p>Create an event, reach the right people and manage registrations from one simple dashboard.</p></div><a class="pill terracotta" href="register.html">Start hosting →</a></div></section>
+<section class="newsletter-section"><div class="container newsletter"><div class="eyebrow">Stay curious</div><h2>A little inspiration,<br><em>once a week.</em></h2><p>Fresh events and local finds, without the noise.</p><form id="newsletterForm"><input type="email" required placeholder="Your email address"><button type="submit">Join Nexora</button></form><small id="newsletterMsg"></small></div></section>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><a class="brand" href="index.html">NEXORA<span>.</span></a><p>Discover what's next — local experiences curated with intention.</p></div><div><b>Explore</b><a href="explore.html">All events</a><a href="explore.html?category=music">Music</a><a href="explore.html?category=arts">Arts & culture</a><a href="explore.html?category=food">Food & drinks</a></div><div><b>For hosts</b><a href="register.html">Create account</a><a href="dashboard.html">Dashboard</a></div><div><b>Company</b><a href="#about">About</a><a href="mailto:hello@nexora.local">Contact</a></div></div><div class="container footer-bottom"><span>© 2026 Nexora</span><span>Made for curious people.</span></div></footer>
+<script src="js/main.js"></script></body></html>
